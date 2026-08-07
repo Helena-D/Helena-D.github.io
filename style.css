@@ -379,16 +379,19 @@ footer a {
 }
 
 .publication-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 30px;
+  margin-top: 40px;
+  align-items: start;
 }
 
 .paper-thumbnail {
-  width: 220px;
+  width: 280px;
   height: 280px;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
+  background: white;
   border: 1px solid var(--line);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -397,7 +400,6 @@ footer a {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
-
 
 @media (max-width: 800px) {
     .publication-grid {
