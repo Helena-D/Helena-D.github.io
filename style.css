@@ -377,3 +377,28 @@ footer a {
     gap: 5px;
   }
 }
+
+.publication-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.paper-thumbnail {
+    width: 100%;
+    border: 1px solid var(--line);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paper-thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+@media (max-width: 800px) {
+    .publication-grid {
+        grid-template-columns: 1fr;
+    }
+}
